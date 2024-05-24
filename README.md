@@ -1,4 +1,4 @@
-# Spam Detection Bot: 
+# Spam Detection Bot: Spamie
 
 Welcome to the my first-ever ML project Spamie - Spam Detection Bot! This bot is designed to automatically detect and remove spam messages in group chats or respond to text messages to determine whether they are spam or not.
 
