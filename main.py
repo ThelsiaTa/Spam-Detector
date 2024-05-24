@@ -4,7 +4,7 @@ import telegram
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 from spam_classifier import predict_spam_or_ham
 
-TOKEN: Final = '6965949026:AAGZukEZo1RbFQdoaJWnKbF8kCa6p4KMB7Y'
+TOKEN: Final = 'YOUR BOT TOKEN'
 BOT_USERNAME: Final = '@spamieDetect_bot'
 
 async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
