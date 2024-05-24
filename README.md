@@ -6,6 +6,7 @@ Welcome to the my first-ever ML project Spamie - Spam Detection Bot! This bot is
 
 - [Introduction](#introduction)
 - [Features](#features)
+- [Dataset](#dataset)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Model Training](#model-training)
@@ -45,7 +46,7 @@ To get started with the project, follow these steps:
 4. Run the botbot
    python main.py
 
-## Demo of Spamie
+## Usage Demo of Spamie
 
 ## Model Training
 The model is trained using a dataset of labeled spam and ham messages. The training script (train_model.py) uses techniques like SMOTE to handle class imbalance and vectorization to convert text into features suitable for machine learning.
