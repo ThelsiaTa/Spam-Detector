@@ -43,10 +43,25 @@ To get started with the project, follow these steps:
    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
    pip install -r requirements.txt
 3. Obtain a Telegram bot token by creating a new bot with BotFather and set it in the main.py file.
-4. Run the botbot
+4. Run the bot
    python main.py
 
-## Usage Demo of Spamie
+## Usage
+### Running the Bot
+To run the bot, simply execute the main.py file. The bot will start polling for messages.
+python main.py
+
+### Interacting with the Bot
+Start Command: /start - Initializes interaction with the bot.
+Help Command: /help - Provides help information about the bot's functionality.
+Message Handling: The bot will analyze any text message sent to it and determine if it's spam or not.
+
+### Example Usage
+import telegram
+from spam_classifier import predict_spam_or_ham
+test_message = "Congratulations! You've won a $500 Amazon gift card. Claim it here [Link]."
+result = predict_spam_or_ham(test_message)
+print("Spam" if result == 1 else "Ham")
 
 ## Model Training
 The model is trained using a dataset of labeled spam and ham messages. The training script (train_model.py) uses techniques like SMOTE to handle class imbalance and vectorization to convert text into features suitable for machine learning.
