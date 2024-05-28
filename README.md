@@ -11,8 +11,6 @@ Welcome to the my first-ever ML project Spamie - Spam Detection Bot! This bot is
 - [Installation](#installation)
 - [Usage](#usage)
 - [Model Training](#model-training)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
