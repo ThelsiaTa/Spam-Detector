@@ -1,6 +1,7 @@
 # Spam Detection Bot: Spamie
 
 Welcome to the my first-ever ML project Spamie - Spam Detection Bot! This bot is designed to automatically detect and remove spam messages in group chats or respond to text messages to determine whether they are spam or not.
+![Untitled design](https://github.com/ThelsiaTa/Spam-Detector/assets/86293437/b43c0658-dc1b-413a-871c-e20517d82af6)
 
 ## Table of Contents
 
