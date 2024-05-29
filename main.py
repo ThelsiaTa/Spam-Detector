@@ -28,10 +28,16 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     chat_id = update.message.chat_id
     message_id = update.message.message_id
 
-    if predict_spam_or_ham(text):
-        await context.bot.delete_message(chat_id = chat_id, message_id=message_id)
-    response: str = handle_response(text)
-    await update.message.reply_text(response)
+    if update.message.chat.type == 'private':
+        # Respond directly to the user in a private chat
+        response = handle_response(text)
+        await update.message.reply_text(response)
+    else:
+        # Handle messages in a group chat
+        if predict_spam_or_ham(text):
+            await context.bot.delete_message(chat_id=chat_id, message_id=message_id)
+            response = "The spam message has just been deleted"
+            await context.bot.send_message(chat_id=chat_id, text=response)
 
 # Handle Errors
 def error(update: Update, context: ContextTypes.DEFAULT_TYPE):
